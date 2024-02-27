@@ -1,25 +1,4 @@
-var map; // Define map variable in the global scope
-
-        function initMap() {
-         map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 34.04036781882561, lng: -77.88998945876496},
-        zoom: 14,
-        disableDefaultUI: true, // Disable default UI controls
-        styles: [
-            { featureType: 'poi', stylers: [{ visibility: 'off' }] }, // Hide points of interest
-            { featureType: 'transit', stylers: [{ visibility: 'off' }] }, // Hide transit
-            { featureType: 'road', elementType: 'labels.icon', stylers: [{ visibility: 'off' }] }, // Hide road icons
-            { featureType: 'road', elementType: 'labels.text', stylers: [{ visibility: 'on' }] } // Show road labels
-        ],
-        gestureHandling: 'greedy', // Enable smooth zoom
-        zoomControlOptions: {
-            style: google.maps.ZoomControlStyle.SMALL, // Set zoom control style
-            position: google.maps.ControlPosition.TOP_LEFT, // Set zoom control position
-            animation: google.maps.Animation.SMALL // Set zoom animation
-        }
-    });
-
-                var markers = [
+var markers = [
                 {
                     position: {lat: 34.04036781882561, lng: -77.88998945876496},
                     title: 'Carolina Beach House',
@@ -276,3 +255,4 @@ var map; // Define map variable in the global scope
             // Initially show all markers
             updateMarkers('all');
         }
+  
