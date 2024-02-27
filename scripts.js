@@ -1,4 +1,5 @@
-    var map;
+       var map;
+    
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
             center: {lat: 34.04036781882561, lng: -77.88998945876496},
@@ -269,7 +270,7 @@
             });
         }
 
-        document.getElementById('filter').addEventListener('change', function() {
+        document.document.getElementsByClassName("filter").addEventListener('change', function() {
             var selectedFilter = this.value;
             updateMarkers(selectedFilter);
         });
